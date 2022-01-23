@@ -1,0 +1,34 @@
+/* stylelint-disable */
+
+@mixin burger {
+  & {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 18px;
+    height: 14px;
+    cursor: pointer;
+
+    @include mobile {
+      margin-right: 0;
+    }
+
+    &__line {
+      width: 100%;
+      height: 1px;
+      background-color: $black;
+      transition: background-color .3s ease-in-out;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover .burger__line,
+    &:focus .burger__line {
+      background-color: red;
+    }
+  }
+
+}
