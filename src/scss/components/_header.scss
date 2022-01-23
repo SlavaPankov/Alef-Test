@@ -27,6 +27,7 @@
       margin: 0 auto;
 
       @include mobile {
+        padding: 0 20px;
         padding-top: 22px;
         padding-bottom: 30px;
       }
@@ -45,8 +46,8 @@
     &__icon {
       fill: $white;
       stroke: $black;
-      width: 24px;
-      height: 24px;
+      width: 15px;
+      height: 15px;
       transition: fill .3s ease-in-out;
     }
 
